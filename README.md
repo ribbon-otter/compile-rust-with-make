@@ -3,10 +3,10 @@ It uses rust 2015 edition, as that is what rustc defaults too.
 
 As you can see each file is treated as a separate crate, since crates are analogous to C++'s compilation units for this purpose.
 
-I suspect that compiling rust like this is rarely if ever practical, but I found it insteresting to see what rust without cargo would be like.
+I suspect that compiling rust like this is rarely if ever practical, but I found it interesting to see what rust without cargo would be like.
 
 # Explanation
-There are four files arranged in a dimond of dependencies: `main.rs` depends on `a.rs` and `b.rs` which both depend on `util.rs`.
+There are four files arranged in a diamond of dependencies: `main.rs` depends on `a.rs` and `b.rs` which both depend on `util.rs`.
 
 To compile, run `make` and then run `./main` to see code from `a`, `b`, and `util` to be called from `main.rs`.
 

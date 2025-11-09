@@ -8,7 +8,7 @@ I suspect that compiling rust like this is rarely if ever practical, but I found
 # Explanation
 There are four files arranged in a diamond of dependencies: `main.rs` depends on `a.rs` and `b.rs` which both depend on `util.rs`.
 
-To compile, run `make` and then run `./main` to see code from `a`, `b`, and `util` to be called from `main.rs`.
+To compile, run `make` and then run `./main` to see code from `a`, `b`, and `util` being called from `main.rs`.
 
 # License 
 
